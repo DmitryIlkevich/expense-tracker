@@ -35,3 +35,43 @@ control over their finances, this app is tailored to meet your needs.
 <li>Java 11</li>
 <li>Spring Boot 3</li>
 <li>H2</li>
+
+<h3>Test cases:<h3>
+
+<h5>Check all categories listed at UI Categories tab<h5>
+<li>Go to categories tab</li>
+<li>Count categories</li>
+<li>Go to H2 database and count categories</li>
+<li>Expected: categories at database should be equal to categories at UI</li>
+
+<h5>Check category created<h5>
+<li>Go to categories tab</li>
+<li>Click add button</li>
+<li>Fill fields</li>
+<li>Click save button</li>
+<li>Expected: new category should appear at UI category tab</li>
+
+<h5>Check category removed<h5>
+<li>Go to categories tab</li>
+<li>Create new category</li>
+<li>Click remove button</li>
+<li>Expected: removed category should disappear from UI category part</li>
+
+<h5>Check all transaction histories listed at UI Categories tab<h5>
+<li>Go to transaction history tab</li>
+<li>Count all transactions</li>
+<li>Go to H2 database and count all transactions</li>
+<li>Expected: transactions at database should be equal to transactions at UI</li>
+
+<h5>Check transaction history created<h5>
+<li>Go to transaction history tab</li>
+<li>Click add button</li>
+<li>Fill fields</li>
+<li>Click save button</li>
+<li>Expected: new transaction history should appear at UI category tab by specific date</li>
+
+<h5>Check transaction history removed<h5>
+<li>Go to transaction history tab</li>
+<li>Create new transaction history</li>
+<li>Click remove button under specific category</li>
+<li>Expected: removed category should disappear from UI category part</li>
